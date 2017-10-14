@@ -112,7 +112,13 @@
 			.reg-brand {
 				visibility: hidden;
 			}
-
+			#work label {
+				border: 0 !important;
+			}
+			.tab-content {
+				padding: 0 5px;
+				border: 0.5px solid white;
+			}
 		}
 
 		@media screen and (max-width: 360px) {
@@ -1587,6 +1593,7 @@
 	position: relative;
 	margin-bottom: 1px;
 	width: 100%;
+
 	color: #fff;
 	overflow: hidden;
 }
@@ -1609,10 +1616,16 @@
 	} #work label small {
 	font-size: 0.5rem;
 }
-
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+	}
 .tab-content {
 	max-height: 0;
-	
+
+	overflow: scroll;
+
 
 	-webkit-transition: max-height .5s ease-in-out;
 	-o-transition: max-height .5s ease-in-out;
@@ -1627,7 +1640,7 @@
 }
 /* :checked, when open */
 #work input:checked ~ .tab-content {
-	max-height: 100000em;
+	max-height: 50em;
 }
 /* Icon */
 #work label::after {
@@ -1687,4 +1700,5 @@
 .aboutpic {
 	width: 100% !important;
 	height: auto;
+
 }
