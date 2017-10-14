@@ -1627,7 +1627,7 @@
 }
 /* :checked, when open */
 #work input:checked ~ .tab-content {
-	max-height: 100em;
+	max-height: 100000em;
 }
 /* Icon */
 #work label::after {
