@@ -1375,7 +1375,7 @@
 				}
 
 			#header .content .inner {
-				padding: 2.5rem 1rem;
+				padding: 0rem 1rem;
 			}
 
 			#header .content p {
@@ -1391,7 +1391,7 @@
 			}
 
 				#header .content .inner {
-					padding: 2.5rem 0;
+					padding: 1.5rem 0;
 				}
 
 				#header nav ul {
@@ -1619,7 +1619,6 @@
 	}
 .tab-content {
 	max-height: 0;
-
 	overflow: scroll;
 
 
@@ -1636,7 +1635,7 @@
 }
 /* :checked, when open */
 #work input:checked ~ .tab-content {
-	max-height: 50em;
+	max-height: 100%;	
 }
 /* Icon */
 #work label::after {
